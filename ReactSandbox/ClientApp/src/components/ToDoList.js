@@ -1,4 +1,5 @@
 ﻿import React, { Component } from 'react';
+import ToDoItem from './ToDoItem'
 
 export class ToDoList extends Component {
 
@@ -15,7 +16,7 @@ export class ToDoList extends Component {
     return (
       <ul>
         {todoItems.map(todoItem =>
-          <li>{todoItem.name}</li>
+          <ToDoItem todoItem={todoItem} />
         )}
       </ul>
     );
